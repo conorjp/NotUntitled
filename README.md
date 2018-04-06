@@ -5,3 +5,5 @@
 * Conor Parrish
 
 * Nathan Carmine
+
+* Kathryn Osborn
