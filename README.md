@@ -1,3 +1,7 @@
 # Programming Exercise 14
 
-Arnab Purkayastha
+* Arnab Purkayastha
+
+* Conor Parrish
+
+* Nathan Carmine
