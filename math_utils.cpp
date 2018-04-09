@@ -1,5 +1,7 @@
 #include "math_utils.h"
 #include <math.h>
+#include <sstream>
+#include <string>
 
 bool Math::IsSquare(int num) {
   if(num < 0){ return false; } // No negativity
@@ -8,7 +10,8 @@ bool Math::IsSquare(int num) {
 }
 
 int Math::GetDigit(int num, int place){
-  return 0;
+  if ( num < place ) { throw std::invalid_argument("Invalid input!");}
+  return std::to_string(num)[std::to_string(num).length()-std::to_string(place).length()] - '0';
 }
 
 bool Math::EqualParity(int x, int y) {

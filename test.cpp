@@ -17,13 +17,13 @@ TEST_CASE ( "Testing function IsSquare()")
   SECTION( "with square number" )
     {
         REQUIRE(math_util->IsSquare(1) == TRUE);
-    
-        
+
+
     }
   SECTION( "with non-square number")
     {
         REQUIRE(math_util->IsSquare(3) == FALSE);
-       
+
      }
 }
 
@@ -33,7 +33,7 @@ TEST_CASE("Testing function GetDigit")
     SECTION("with valid input")
     {
         REQUIRE(math_util->GetDigit(17,1) == 7);
-   
+
     }
     SECTION("with invalid input")
     {
