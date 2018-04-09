@@ -10,6 +10,9 @@ PE14: Version Control
 #include <sstream>
 #include <string>
 
+Math::Math(){
+	
+}
 bool Math::IsSquare(int num) {
   if(num < 0){ return false; } // No negativity
   int root = round(sqrt(num));
