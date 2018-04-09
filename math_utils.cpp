@@ -1,3 +1,9 @@
+/*
+Put your names,
+David Persico
+*/
+
+
 #include "math_utils.h"
 #include <math.h>
 #include <sstream>
@@ -11,6 +17,7 @@ bool Math::IsSquare(int num) {
 
 int Math::GetDigit(int num, int place){
   if ( num < place ) { throw std::invalid_argument("Invalid input!");}
+  // covert num to a string, index to the correct char, covert to int with - '0'
   return std::to_string(num)[std::to_string(num).length()-std::to_string(place).length()] - '0';
 }
 

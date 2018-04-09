@@ -16,13 +16,13 @@ TEST_CASE ( "Testing function IsSquare()")
 
   SECTION( "with square number" )
     {
-        REQUIRE(math_util->IsSquare(1) == TRUE);
+        REQUIRE(math_util->IsSquare(1) == true);
 
 
     }
   SECTION( "with non-square number")
     {
-        REQUIRE(math_util->IsSquare(3) == FALSE);
+        REQUIRE(math_util->IsSquare(3) == false);
 
      }
 }
