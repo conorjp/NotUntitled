@@ -7,7 +7,7 @@ bool Math::IsSquare(int num) {
   return (num == root * root); // Re-square and compare
 }
 
-static int GetDigit(int num, int place){
+int Math::GetDigit(int num, int place){
   return 0;
 }
 
