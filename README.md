@@ -7,3 +7,5 @@
 * Nathan Carmine
 
 * Kathryn Osborn
+
+* David Persico
