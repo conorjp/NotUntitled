@@ -4,7 +4,7 @@ Conor:
 Kate:
 - Tests
 -
-Arnob:
+Arnab:
 - Overload operator 
 - Makefile
 Daniel:

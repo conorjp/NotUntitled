@@ -1,6 +1,7 @@
 /*
-Put your names,
-David Persico
+Arnab Purkayastha, Conor Parrish,
+David Persico, Kathryn Osborn & Nathane Carmine
+PE14: Version Control 
 */
 
 
