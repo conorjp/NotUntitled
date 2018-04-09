@@ -1,7 +1,5 @@
 /*
-Author: David Persico
-Test file checks for issues
-I had trouble using this to fix my program.
+
 */
 
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file

@@ -7,9 +7,9 @@ class Math {
 public:
   Math();
   static bool IsSquare(int num);
-  int GetDigit(int num, int place);
-  bool EqualParity(int x, int y);
-  bool EqualParity(std::vector<int> nums);
+  static int GetDigit(int num, int place);
+  static bool EqualParity(int x, int y);
+  static bool EqualParity(std::vector<int> nums);
 private:
 };
 
