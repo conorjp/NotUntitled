@@ -1,0 +1,15 @@
+Conor:
+- IsSquare()
+- 1st EqualParity()
+Kate:
+- Tests
+-
+Arnob:
+- Overload operator 
+- Makefile
+Daniel:
+- GetDigit
+-
+Nathan:
+- 2nd Equal Parity 
+-
