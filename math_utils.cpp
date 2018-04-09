@@ -1,19 +1,27 @@
 #include "math_utils.h"
+#include <vector>
+#include <iostream>
+#include <stdexcept>
+  
+  Math::Math(){
 
-class Math {
-  static bool IsSquare(int num) {
+  }
+
+  bool Math::IsSquare(int num) {
     return false;
   }
 
-  static int GetDigit(int num, int place) {
+  int Math::GetDigit(int num, int place) {
+    if(place > num){
+      throw std::invalid_argument("Invalid input!");
+    }
     return 0;
   }
 
-  static bool EqualParity(int x, int y) {
+  bool Math::EqualParity(int x, int y) {
     return false;
   }
 
-  static bool EqualParity(std::vector<int> nums) {
+  bool Math::EqualParity(std::vector<int> nums) {
     return false;
   }
-}

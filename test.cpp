@@ -6,30 +6,39 @@ I had trouble using this to fix my program.
 
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-#include "Store.h"
-#include <string>
+#include "math_utils.h"
+#include <iostream>
 #include <vector>
-#include <map>
 
 
-TEST_CASE ( "Read/Write")
-  {
-  SECTION( "Read then Write creates identical file" )
+
+TEST_CASE ( "Testing function IsSquare()")
+{
+    Math* math_util = new Math();
+
+  SECTION( "with square number" )
     {
-    Store s;
-    std::vector<std::string> firstRead = s.ReadStore();
-    s.WriteStore();
-    REQUIRE(firstRead == s.ReadStore());
+        REQUIRE(math_util->IsSquare(1) == TRUE);
+    
+        
     }
-  SECTION( "Read, inventory and name strip, rebuilt and final Write creates identical file" )
+  SECTION( "with non-square number")
     {
-    Store s;
-    std::vector<std::string> firstRead = s.ReadStore();
-    std::map<double,std::pair<int,std::string>> si;
-    si =  s.GrabInventory();
-    std::vector<std::string> name = s.GrabStoreName();
-    s.RebuildStore(name);
-    s.WriteStore();
-    REQUIRE(firstRead == s.ReadStore());
+        REQUIRE(math_util->IsSquare(3) == FALSE);
+       
+     }
+}
+
+TEST_CASE("Testing function GetDigit")
+{
+    Math* math_util = new Math();
+    SECTION("with valid input")
+    {
+        REQUIRE(math_util->GetDigit(17,1) == 7);
+   
     }
-  }
+    SECTION("with invalid input")
+    {
+        REQUIRE_THROWS_AS(math_util->GetDigit(17,1000), std::invalid_argument);
+    }
+}
