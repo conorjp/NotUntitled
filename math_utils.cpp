@@ -7,19 +7,15 @@ bool Math::IsSquare(int num) {
   return (num == root * root); // Re-square and compare
 }
 
-  bool Math::IsSquare(int num) {
-    return false;
-  }
+static int GetDigit(int num, int place){
+  return 0;
+}
 
 bool Math::EqualParity(int x, int y) {
   if(x % 2 == 0){ return (y % 2 == 0); } // Both even
   else{ return (y % 2 != 0); }  // Both odd
 }
 
-  bool Math::EqualParity(int x, int y) {
-    return false;
-  }
-
-  bool Math::EqualParity(std::vector<int> nums) {
-    return false;
-  }
+bool Math::EqualParity(std::vector<int> nums) {
+  return false;
+}
