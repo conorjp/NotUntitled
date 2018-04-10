@@ -5,11 +5,9 @@ Kate:
 - Tests
 -
 Arnab:
-- Overload operator 
+- Overload operator(Do we have to do this? I don't see it in the writeup)
 - Makefile
 Daniel:
 - GetDigit
--
 Nathan:
 - 2nd Equal Parity 
--
