@@ -77,3 +77,17 @@ bool Math::EqualParity(std::vector<int> nums) {
   // Return true if no parity mismatches were found
   return true;
 }
+
+
+/*
+Calulates distance between two points of arbitrary dimension
+*/
+double Math::distance(std::vector<int> p1, std::vector<int> p2) {
+   if (p1.size() != p2.size()) throw std::invalid_argument("Invalid input!");
+
+   int squares = 0;
+   for (int i = 0; i < p1.size(); i++) {
+    squares += (p1[i] - p2[i]) * (p1[i] - p2[i]);
+  }
+   return sqrt(squares);
+}

@@ -10,6 +10,8 @@ public:
   static int GetDigit(int num, int place);
   static bool EqualParity(int x, int y);
   static bool EqualParity(std::vector<int> nums);
+
+    static double distance(std::vector<int> p1, std::vector<int> p2);
 private:
 };
 
