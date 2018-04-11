@@ -6,3 +6,4 @@
 math_utils.o
 test
 test.gc*
+*.dSYM
