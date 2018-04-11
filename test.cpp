@@ -2,7 +2,7 @@
 Arnab Purkayastha, Conor Parrish,
 David Persico, Kathryn Osborn & Nathane Carmine
 PE14: Version Control
-Tests for the Math Class 
+Tests for the Math Class
 */
 
 
@@ -115,8 +115,38 @@ TEST_CASE("Testing function EqualParity(int x, int y)")
 TEST_CASE("Testing function EqualParity(std::vector<int> nums)")
 {
     Math* math_util = new Math();
+    SECTION("with empty vector")
+    {
+        std::vector<int> nums{};
+        REQUIRE(math_util->EqualParity(nums) == true);
+
+    }
+    SECTION("with vector size of 1")
+    {
+        std::vector<int> nums{0};
+        REQUIRE(math_util->EqualParity(nums) == true);
+
+    }
+    SECTION("with vector size of 2 both even")
+    {
+        std::vector<int> nums{0, 2};
+        REQUIRE(math_util->EqualParity(nums) == true);
+
+    }
+    SECTION("with vector size of 2 both odd")
+    {
+        std::vector<int> nums{1, 3};
+        REQUIRE(math_util->EqualParity(nums) == true);
+
+    }
+    SECTION("with vector size of 2 one even one odd")
+    {
+        std::vector<int> nums{1, 2};
+        REQUIRE(math_util->EqualParity(nums) == false);
+
+    }
     SECTION("with nums full of even numbers")
-    {   
+    {
         std::vector<int> nums{2, 4, 6, 8, 10, 12, 14, 16};
         REQUIRE(math_util->EqualParity(nums) == true);
 
