@@ -1,7 +1,7 @@
 /*
 Arnab Purkayastha, Conor Parrish,
 David Persico, Kathryn Osborn & Nathane Carmine
-PE14: Version Control 
+PE14: Version Control
 */
 
 
@@ -61,5 +61,19 @@ bool Math::EqualParity(int x, int y) {
 * @return bool Whether the list of numbers have equal parity
 */
 bool Math::EqualParity(std::vector<int> nums) {
-  return false;
+  // Return true if there are none or one items in nums
+  if (nums.size() < 2) return true;
+  // Return Math::EqualParity(int, int) if there are only two
+  if (nums.size() == 2) return Math::EqualParity(nums[0], nums[1]);
+  // Else, go through entire nums vector
+  int prev_num = nums[0]; // Set first previous num to first item in nums
+  // For each num in nums:
+  for (auto const& num: nums) {
+    // Compare it to the previous num using EqualParity(int, int)
+    // If EqualParity(int, int) returns false, return false in this EqualParity
+    if (!Math::EqualParity(prev_num, num)) return false;
+    prev_num = num; // else, set prev_num to the current num and continue looping
+  }
+  // Return true if no parity mismatches were found
+  return true;
 }
