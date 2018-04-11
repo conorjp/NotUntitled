@@ -1,0 +1,8 @@
+# Mac stuff
+.DS_Store
+._*
+
+# make output
+math_utils.o
+test
+test.gc*
